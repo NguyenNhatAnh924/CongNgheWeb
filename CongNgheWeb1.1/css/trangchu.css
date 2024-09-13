@@ -1,5 +1,6 @@
-.navbar-brand img.logo{
-    width: 100%;
+.logo{
+    height:100px;
+    width:100px;
     box-shadow: -10px 10px 5px #00000080 ;
 }
 
@@ -9,7 +10,6 @@
 
 .navbar-nav{
     margin: auto;
-    width: 80%;
 }
 
 .navbar-brand{
@@ -29,9 +29,10 @@ li.nav-item > a{
     background: #b4d9e8;
     display: block;
     transform: rotate(0deg) skew(20deg) translate(0, 0); 
-    color:  rgb(9, 57, 178);
+    color:  rgb(3, 41, 119);
     font-weight: bold;
     margin-left: 20px;
+    border: 1px solid azure;
 }
 
 li.nav-item > a::after{
@@ -47,6 +48,7 @@ li.nav-item > a::after{
 li.nav-item > a:hover{
     transform: rotate(0deg) skew(20deg) translate(10px, -5px);
     background: #53b9e0;
+    color: azure;
     box-shadow: -20px 20px 10px #00000080;
     margin-left: 20px;
 }
