@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sản Phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/trangchu.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="TrangChu.html">
+                  
+                    <img class="logo" src="img/horus.png" alt="Trang chủ">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-3 mt-lg-5">
+                        
+                        <li class="nav-item w-75 m-auto">
+                            <a class="nav-link" href="TrangChu.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item w-75 m-auto mb-1">
+                            <a class="nav-link active" aria-current="page" href="Sanpham.html">Sản Phẩm</a>
+                        </li>
+                        <li class="nav-item w-75 m-auto mb-1">
+                            <a class="nav-link" href="DangNhap.html">Đăng Nhập</a>
+                        </li>
+                        <li class="nav-item w-75 m-auto mb-1">
+                            <a class="nav-link" href="DangKy.html">Đăng Ký</a>
+                        </li>
+                        <li class="nav-item w-75 m-auto mb-1">
+                            <a class="nav-link" href="SanPham1.html">Sản Phẩm demo</a>
+                        </li>
+                    </ul>
+                    <!-- Form tìm kiếm -->
+                    <form class="d-flex ms-3 mt-lg-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Tìm kiếm</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="main">
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Thanh danh mục -->
+                <div class="col-lg-3 mb-3">
+                    <h5 class="mb-3">Danh Mục</h5>
+                    <div class="list-group">
+                        <!-- Các liên kết danh mục -->
+                        <a href="#laptops" class="list-group-item list-group-item-action">Laptop</a>
+                        <a href="#phones" class="list-group-item list-group-item-action">Điện Thoại</a>
+                        <a href="#tablets" class="list-group-item list-group-item-action">Máy Tính Bảng</a>
+                        <a href="#watches" class="list-group-item list-group-item-action">Đồng Hồ</a>
+                        <!-- Thêm nhiều danh mục nếu cần -->
+                    </div>
+                </div>
+
+                <!-- Các phần sản phẩm -->
+                <div class="col-lg-9">
+                    <!-- Phần Laptop -->
+                    <div id="laptops" class="mb-4">
+                        <h4>Laptop</h4>
+                        <div class="row">
+                            <!-- Sản phẩm Laptop 1 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/laptop1.jpg" class="card-img-top" alt="Laptop 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop 1</h5>
+                                        <p class="card-text">Mô tả cho Laptop 1.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Laptop 2 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/laptop2.jpg" class="card-img-top" alt="Laptop 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop 2</h5>
+                                        <p class="card-text">Mô tả cho Laptop 2.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Laptop 3 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/laptop3.jpg" class="card-img-top" alt="Laptop 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laptop 3</h5>
+                                        <p class="card-text">Mô tả cho Laptop 3.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần Điện Thoại -->
+                    <div id="phones" class="mb-4">
+                        <h4>Điện Thoại</h4>
+                        <div class="row">
+                            <!-- Sản phẩm Điện Thoại 1 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/phone1.jpg" class="card-img-top" alt="Phone 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Điện Thoại 1</h5>
+                                        <p class="card-text">Mô tả cho Điện Thoại 1.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Điện Thoại 2 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/phone2.jpg" class="card-img-top" alt="Phone 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Điện Thoại 2</h5>
+                                        <p class="card-text">Mô tả cho Điện Thoại 2.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Điện Thoại 3 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/phone3.jpg" class="card-img-top" alt="Phone 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Điện Thoại 3</h5>
+                                        <p class="card-text">Mô tả cho Điện Thoại 3.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần Máy Tính Bảng -->
+                    <div id="tablets" class="mb-4">
+                        <h4>Máy Tính Bảng</h4>
+                        <div class="row">
+                            <!-- Sản phẩm Máy Tính Bảng 1 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/tablet1.jpg" class="card-img-top" alt="Tablet 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Máy Tính Bảng 1</h5>
+                                        <p class="card-text">Mô tả cho Máy Tính Bảng 1.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Máy Tính Bảng 2 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/tablet2.jpg" class="card-img-top" alt="Tablet 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Máy Tính Bảng 2</h5>
+                                        <p class="card-text">Mô tả cho Máy Tính Bảng 2.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Máy Tính Bảng 3 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/tablet3.jpg" class="card-img-top" alt="Tablet 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Máy Tính Bảng 3</h5>
+                                        <p class="card-text">Mô tả cho Máy Tính Bảng 3.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phần Đồng Hồ -->
+                    <div id="watches" class="mb-4">
+                        <h4>Đồng Hồ</h4>
+                        <div class="row">
+                            <!-- Sản phẩm Đồng Hồ 1 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/watch1.jpg" class="card-img-top" alt="Watch 1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đồng Hồ 1</h5>
+                                        <p class="card-text">Mô tả cho Đồng Hồ 1.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Đồng Hồ 2 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/watch2.jpg" class="card-img-top" alt="Watch 2">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đồng Hồ 2</h5>
+                                        <p class="card-text">Mô tả cho Đồng Hồ 2.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Sản phẩm Đồng Hồ 3 -->
+                            <div class="col-lg-4 col-sm-6 mb-4">
+                                <div class="card">
+                                    <img src="img/watch3.jpg" class="card-img-top" alt="Watch 3">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Đồng Hồ 3</h5>
+                                        <p class="card-text">Mô tả cho Đồng Hồ 3.</p>
+                                        <a href="#" class="btn btn-primary">Mua Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần chân trang (Footer) -->
+    <div class="footer bg-body-tertiary">
+        <div class="container">
+            <ul class="row text-center">
+                <li class="col mt-3">
+                    <p>
+                        &copy; Bản quyền không có bản quyền!
+                        <br>
+                        Sau chia tay em thấy sao về cuộc đời em.
+                        <br>
+                        Em cô đơn hay thích hơn đã kể ai xem?
+                        <br>
+                        Sau chia tay anh thích trong phòng ngoài chơi game.
+                        <br>
+                        Anh không đâu không khóc đâu, cũng chẳng say mèn.
+                    </p>
+                </li>
+                <li class="col list-group-flush mt-3">
+                    <!-- Các liên kết mạng xã hội -->
+                    <a href="#" class="list-group-item">Pinterest <i class="fab fa-pinterest"></i></a>
+                    <a href="#" class="list-group-item">Twitter <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="list-group-item">Facebook <i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="col mt-3">
+                    <p>
+                        Thì ra tương tư là thế này
+                        <br>
+                        24/7
+                        <br>
+                        Nghĩ đến em
+                        <br>
+                        Nghĩ đến em
+                        <br>
+                        Thả mây trôi qua từng kẽ tay
+                        <br>
+                        Cho làn khói này khẽ bay
+                        <br>
+                        Chìm sâu vào giai điệu êm ái
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Kết nối với Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lấy tất cả các liên kết danh mục
+            const categoryLinks = document.querySelectorAll('.list-group-item');
+
+            // Thêm sự kiện click cho từng liên kết
+            categoryLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const categoryId = this.getAttribute('href').substring(1);
+                    const section = document.getElementById(categoryId);
+
+                    // Cuộn mượt đến phần mục tiêu
+                    section.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
