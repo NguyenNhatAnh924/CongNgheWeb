@@ -36,60 +36,64 @@
           <div class="col-md-3 d-flex justify-content-center justify-content-md-end align-items-center">
             <div class="d-flex">
               <!-- Biểu tượng giỏ hàng -->
-              <a class="text-reset me-3" href="GioHang.html">
+              <a class="text-reset ms-2" href="#">
                 <span><i class="fas fa-shopping-cart"></i></span>
                 <span class="badge rounded-pill badge-notification bg-danger">1</span>
               </a>
-              <!-- Biểu tượng thông báo -->
-              <div class="dropdown">
-                <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
-                  role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                  <i class="fas fa-bell"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Some news</a></li>
-                  <li><a class="dropdown-item" href="#">Another news</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+              <!-- biểu tượng thông báo -->
+              <div class="dropdown ms-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fas fa-bell"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Some news</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Another news</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
               </div>
-              <!-- Biểu tượng chọn ngôn ngữ -->
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <i class="fa-solid fa-language"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li></li>
+            </div>
+            <!-- Biểu tượng ngôn ngữ -->
+            <div class="dropdown ms-2">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-language"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
                   <a class="dropdown-item" href="#">English</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Polski</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">中文</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">日本語</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">iDeutsch</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Français</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Español</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Русский</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Português</a>
-                  </li>
-                </ul>
-              </div>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Polski</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">中文</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">日本語</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">iDeutsch</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Français</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Español</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Русский</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Português</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -428,6 +432,23 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-</body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          // Lấy tất cả các liên kết danh mục
+          const categoryLinks = document.querySelectorAll('.list-group-item');
 
+          // Thêm sự kiện click cho từng liên kết
+          categoryLinks.forEach(link => {
+              link.addEventListener('click', function (event) {
+                  event.preventDefault();
+                  const categoryId = this.getAttribute('href').substring(1);
+                  const section = document.getElementById(categoryId);
+
+                  // Cuộn mượt đến phần mục tiêu
+                  section.scrollIntoView({ behavior: 'smooth' });
+              });
+          });
+      });
+  </script>
+</body>
 </html>
