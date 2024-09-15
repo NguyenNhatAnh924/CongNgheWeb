@@ -5,7 +5,7 @@
 }
 
 .header{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .navbar-nav{
@@ -49,14 +49,14 @@ li.nav-item > a:hover{
     transform: rotate(0deg) skew(20deg) translate(10px, -5px);
     background: #53b9e0;
     color: azure;
-    box-shadow: -20px 20px 10px #00000080;
+    box-shadow: -15px 15px 8px #00000080;
     margin-left: 20px;
 }
 
 li.nav-item > a.active{
     transform: rotate(0deg) skew(20deg) translate(10px, -5px);
     background: #42a6cd;
-    box-shadow: -50px 30px 60px #00000080;
+    box-shadow: -15px 15px 8px #00000080;
     color: rgb(18, 48, 123);
     margin-left: 20px;
 }
