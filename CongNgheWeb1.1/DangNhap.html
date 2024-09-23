@@ -126,27 +126,29 @@
         </div>
       </nav>
     </header>
+   <main>
     <div class="container text-center mt-5 bg-light rounded w-50">
-        <form class="row g-3 w-75 m-auto" onsubmit="DangNhap()">
-            <h1 class="text-center">ĐĂNG NHẬP</h1>
-            <div class="col-md-12 col-sm-12">
-                <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
+      <form class="row g-3 w-75 m-auto" onsubmit="DangNhap()">
+          <h1 class="text-center">ĐĂNG NHẬP</h1>
+          <div class="col-md-12 col-sm-12">
+              <input type="email" placeholder="Email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-12 col-sm-12">
+              <input type="password" placeholder="Password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12 col-sm-12">
+              <button style="font-weight: bold;" type="submit" class="btn btn-success mb-3">Đăng Ký</button>
             </div>
-            <div class="col-md-12 col-sm-12">
-                <input type="password" placeholder="Password" class="form-control" id="inputPassword4">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgotPasswordModal">
+              Quên Mật Khẩu?
+          </button>
+            <div class="col-12 text">
+                <p>Chưa có tài khoản? <a href="DangKy.html">Đăng Ký</a></p>
             </div>
-            <div class="col-12 col-sm-12">
-                <button style="font-weight: bold;" type="submit" class="btn btn-success mb-3">Đăng Ký</button>
-              </div>
-              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#forgotPasswordModal">
-                Quên Mật Khẩu?
-            </button>
-              <div class="col-12 text">
-                  <p>Chưa có tài khoản? <a href="DangKy.html">Đăng Ký</a></p>
-              </div>
-            </div>
-        </form>
-    </div>
+          </div>
+      </form>
+  </div>
+   </main>
     <footer class="text-center text-lg-start text-white" style="background-color: #45526e">
       <div class="container p-4 pb-0">
         <section class="">
