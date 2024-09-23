@@ -95,5 +95,6 @@ ul{
 }
 
 .brand{
-    background-image: url(../img/backgroud1.jpg);
+    /* background-image: url(../img/backgroud1.jpg); */
+    background-image: linear-gradient(#3a89a8,#b4d9e8)
 }
